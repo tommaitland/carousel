@@ -187,7 +187,7 @@
 
         var navigation = function() {
 
-            $('a[data-carousel!=""]').click( function(e) {
+            $('a[data-carousel]').click( function(e) {
                 
                 plugin.pause();
 
