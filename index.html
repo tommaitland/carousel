@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Carousel</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/tablet.css">
+        <link rel="stylesheet" href="css/desktop.css">
+        <script src="js/modernizr-custom.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="js/carousel.js"></script>   
+        <script src="js/gist-embed.js"></script> 
+        <link rel="stylesheet" href="https://gist.github.com/assets/embed-b68b364ecc2e5d8b5ad927cf93583634.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <header>
+
+                <div class="title">
+                    <h1>CAROUSEL<span>v0.9</span></h1>
+                </div>
+
+                <nav class="site-nav">
+                    
+                    <a href="#usage">Usage</a>
+                    <a href="#options">Options</a>
+                    <a href="https://github.com/tommaitland/carousel/">GitHub</a>
+                    <a href="https://github.com/tommaitland/carousel/archive/master.zip" class="download">Download</a>
+                    
+                </nav>
+
+            </header>
+
+            <div class="clear"></div>
+
+            <section class="demo">
+
+                <div id="demo-carousel">
+                    <img src="img/slide1.jpg" />
+                    <img src="img/slide2.jpg" />
+                    <img src="img/slide3.jpg" />
+                    <img src="img/slide4.jpg" />
+                    <img src="img/slide5.jpg" />
+                </div>
+
+                <nav class="carousel-nav">
+                    <a href="#" class="prev" data-carousel="prev">&#9664;</a>
+                    <a href="#1" class="pager" data-carousel="jump">1</a>
+                    <a href="#2" class="pager" data-carousel="jump">2</a>
+                    <a href="#3" class="pager" data-carousel="jump">3</a>
+                    <a href="#4" class="pager" data-carousel="jump">4</a>
+                    <a href="#5" class="pager" data-carousel="jump">5</a>
+                    <a href="#" class="next" data-carousel="next">&#9654;</a>
+                </nav><!--/carousel-nav-->
+
+                <script>
+                    $('#demo-carousel').carousel({
+                        transition: 'slide',
+                        easing: 'ease-in-out',
+                        pauseOnHover: false
+                    });
+                </script>
+
+            </section>
+
+            <section class="content">
+
+                <article id="about">
+                    <p class="feature">Carousel is a lightweight, responsive &amp; easy-to-use jQuery carousel plugin. It's powered by CSS3 animations, packed with features you'll actually use while coming in at a tiny 5kb.</p>
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Use your own markup</li>
+                        <li>Supports all major browsers</li>
+                        <li>Horizonal slide and fade animations</li>
+                        <li>Powered by ultra-smooth CSS3</li>
+                        <li>Paged and next/previous controls</li>
+                        <li>Multiple sliders per page</li>
+                        <li>Full API with callbacks</li>
+                        <li>Works with jQuery</li>
+                    </ul>
+                </article>
+
+                <article id="usage">
+
+                    <h2>Usage</h2>
+                    <p><strong>1.</strong> Add carousel.css to your <code>&lt;head&gt;</code> or import the LESS file</p>
+                    <code id="gist-6131309" data-line="2" data-file="carousel-usage.html"></code>
+
+                    <p><strong>2.</strong> Include <code>carousel.js</code> inside your HTML document after jQuery has been called.</p>
+                    <code id="gist-6131309" data-line="6-7" data-file="carousel-usage.html"></code>
+
+                    <p><strong>3.</strong> Setup your HTML. Carousel needs a wrapper around a set of 2 or more slides. These can be almost any HTML tag.</p>
+                    <code id="gist-6131309" data-line="11-31" data-file="carousel-usage.html"></code>
+
+                    <p><strong>4.</strong> Initialise and configure carousel.</p>
+                    <code id="gist-6131309" data-line="35-43" data-file="carousel-usage.html"></code>
+
+                </article>
+
+                <article id="options">
+
+                    <h2>Options</h2>
+                    <p>Full list of carousel options and callbacks with their defaults. Change options after initialisation by setting values using <code>$(element).data('carousel').settings.propertyName</code>.</p>
+                    
+                    <code id="gist-6131309" data-file="carousel-options.js"></code>
+
+                </article>
+
+                <article id="docs">
+
+                    <h2>Methods</h2>
+                    
+                    <div class="table-wrap">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <th width="30%">Method</th>
+                                <th width="70%">Description</th>
+                            </tr>
+                            <tr>
+                                <td><code>$(element).data('carousel').next()</code></td>
+                                <td>Go to the next slide</td>
+                            </tr>
+                            <tr>
+                                <td><code>$(element).data('carousel').prev()</code></td>
+                                <td>Go to the previous slide</td>
+                            </tr>
+                            <tr>
+                                <td><code>$(element).data('carousel').pause()</code></td>
+                                <td>Pause the carousel</td>
+                            </tr>
+                            <tr>
+                                <td><code>$(element).data('carousel').run()</code></td>
+                                <td>Start the carousel</td>
+                            </tr>
+                            <tr>
+                                <td><code>$(element).data('carousel').jump( integer )</code></td>
+                                <td>Go to the requested slide</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </article>
+
+            </section>
+
+            <footer>
+                <p>Carousel is made with love by <a href="http://tommaitland.net">Tom Maitland.</a> It is released under a LICENSE.</p>
+                <p>Demo images credit: <a href="http://www.flickr.com/photos/gigi62/2419765054/">luigi</a>, <a href="http://www.flickr.com/photos/bohlander/2800384628/">Michael Bohlander</a>, <a href="http://www.flickr.com/photos/wili/332788255/">Ville Miettinen</a>, <a href="http://www.flickr.com/photos/tsoumplekas/8423597290/">Christos Tsoumplekas</a> and <a href="http://www.flickr.com/photos/andywon/4011885890/">Andreas Wonisch</a></p>
+                <a href="https://twitter.com/TomMaitland" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @TomMaitland</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </footer>
+
+        </div>
+
+    </body>
+</html>

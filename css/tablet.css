@@ -1,0 +1,199 @@
+/*
+	Silence is golden.
+
+	This file is ready for you to start adding site-specific colours, variables and settings.
+	We didn't add any so you don't need to delete them
+
+*/
+@media (min-width: 768px) and (max-width: 959px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+  header {
+    float: left;
+    width: 496px;
+    margin-left: 136px;
+    margin-right: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .title {
+    float: left;
+    width: 176px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0;
+  }
+  .site-nav {
+    float: left;
+    width: 304px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0;
+  }
+  .content article {
+    float: left;
+    width: 496px;
+    margin-left: 136px;
+    margin-right: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  footer {
+    float: left;
+    width: 496px;
+    margin-left: 136px;
+    margin-right: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 140%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #262b30;
+  }
+  h1 {
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 21px;
+    margin-top: 10.5px;
+    margin-bottom: 5.25px;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 17.5px;
+    margin-top: 8.75px;
+    margin-bottom: 4.375px;
+    color: #535e69;
+  }
+  h4 {
+    font-size: 28px;
+    margin-top: 14px;
+    margin-bottom: 7px;
+  }
+  h5 {
+    font-size: 21px;
+    margin-top: 10.5px;
+    margin-bottom: 5.25px;
+  }
+  h6 {
+    font-size: 14px;
+    margin-top: 7px;
+    margin-bottom: 3.5px;
+  }
+  body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 14px 0;
+    color: #262b30;
+    font-weight: 200;
+  }
+  p.feature {
+    font-size: 1.25em;
+  }
+  a {
+    color: #991c00;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #661300;
+  }
+  abbr,
+  acronym {
+    border-bottom: 1px dotted;
+    cursor: help;
+  }
+  address {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+  }
+  blockquote {
+    margin: 14px 0;
+    padding: 0 0 0 28px;
+  }
+  cite {
+    font-style: italic;
+  }
+  code {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    background: #f6f7f8;
+    color: #535e69;
+    font-size: 1em;
+  }
+  em,
+  i {
+    font-style: italic;
+  }
+  strong,
+  b {
+    font-weight: bold;
+  }
+  ol,
+  ul {
+    margin: 14px 0;
+    padding: 0 0 0 28px;
+  }
+  ol li,
+  ul li {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+    list-style-position: outside;
+    color: #262b30;
+  }
+  ul li {
+    list-style: disc;
+  }
+  ol li {
+    list-style: decimal;
+  }
+  form {
+    margin: 14px 0;
+  }
+  dl {
+    margin: 14px 0;
+  }
+  dl dt {
+    font-weight: bold;
+  }
+  dl dd {
+    margin: 0 0 7px;
+  }
+  table {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    width: 100%;
+  }
+  table th {
+    padding: 7px;
+    border: 1px solid #e8eaed;
+    background: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  table td {
+    padding: 7px;
+    border: 1px solid #e8eaed;
+  }
+}

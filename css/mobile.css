@@ -1,0 +1,205 @@
+/*
+	Silence is golden.
+
+	This file is ready for you to start adding site-specific colours, variables and settings.
+	We didn't add any so you don't need to delete them
+
+*/
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  header {
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .title {
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 0;
+  }
+  .site-nav {
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-right: 0;
+  }
+  .content article {
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  footer {
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 140%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #262b30;
+  }
+  h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 24px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #535e69;
+  }
+  h4 {
+    font-size: 32px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  h5 {
+    font-size: 24px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+  }
+  h6 {
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+  body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+  }
+  p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    margin: 16px 0;
+    color: #262b30;
+    font-weight: 200;
+  }
+  p.feature {
+    font-size: 1.25em;
+  }
+  a {
+    color: #991c00;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #661300;
+  }
+  abbr,
+  acronym {
+    border-bottom: 1px dotted;
+    cursor: help;
+  }
+  address {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+  }
+  blockquote {
+    margin: 16px 0;
+    padding: 0 0 0 32px;
+  }
+  cite {
+    font-style: italic;
+  }
+  code {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    background: #f6f7f8;
+    color: #535e69;
+    font-size: 1em;
+  }
+  em,
+  i {
+    font-style: italic;
+  }
+  strong,
+  b {
+    font-weight: bold;
+  }
+  ol,
+  ul {
+    margin: 16px 0;
+    padding: 0 0 0 32px;
+  }
+  ol li,
+  ul li {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    list-style-position: outside;
+    color: #262b30;
+  }
+  ul li {
+    list-style: disc;
+  }
+  ol li {
+    list-style: decimal;
+  }
+  form {
+    margin: 16px 0;
+  }
+  dl {
+    margin: 16px 0;
+  }
+  dl dt {
+    font-weight: bold;
+  }
+  dl dd {
+    margin: 0 0 8px;
+  }
+  table {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    width: 100%;
+  }
+  table th {
+    padding: 8px;
+    border: 1px solid #e8eaed;
+    background: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  table td {
+    padding: 8px;
+    border: 1px solid #e8eaed;
+  }
+  .title {
+    text-align: center;
+  }
+  .site-nav {
+    text-align: center;
+  }
+}

@@ -1,0 +1,176 @@
+//
+// Base CSS File - Standard Desktops ~960px
+// --------------------------------------------------
+
+
+
+// Grid Variables
+// -------------------
+
+@containerWidth: 960px;
+@columnCount:    12;
+@gutterRatio:    25%;
+@paddingRatio:   100%;
+
+
+// Type Variables
+// -------------------
+
+@fontSize: 16px;
+@lineHeight: 140%;
+
+
+// Base Styles
+// -------------------
+
+@import "_reset.less"; // basic css reset
+
+@import "_variables.less"; // site variables
+@import "_mixins.less"; // grid and mixins
+
+@import "_layout.less"; // site layouts
+@import "_type.less"; // site typography
+@import "_forms.less"; // form styles
+
+
+// Plugin Styles
+// -------------------
+
+@import "_carousel.less";
+
+
+// Custom Styles
+// -------------------
+
+body {
+	background: #fff;
+	border-top: 3px solid @primary;
+	//background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAFhUlEQVR4Xu2d3U3kQBCEbyIYsSFACBACGwKEACFACBAChMCGsIQAIUAIICLgeLjzw2etvhvdS0nTJ6GT5fW4bE91uX+m3S4uLvput/v69eff9/d3b60t2+fn5/35+XnZ3u/3fbvdLtvHx8f9/f394PEvLy/97Oxs2f/x8dE3m82yfXNz0+/v75dt/v7q6qo/Pj4ePJ/9nnjv7u767e3twfNz/9vbWz85OTl4/byeh4eHfn19/c/j8/ft74Oo/zPuQD2QjOewoKgHkvZAaINPT0/76+vrYgNpQ4+Ojvrn5+eyn9s8ntvUDB5PzaCmUbM43s/97T9/B/FxPGqM3Q9qKvFzfF4/NYf3txiSxpAwPNPDKYaETYFGm/n09NQvLy8P+g20ifRj7L2d7/k8P2068ZjN5n5qCrdp03k+/p4axv28vlGNKoakMSQMz/RwiiFhU6Dxvd9iTbSJFiuiTebvqTm2TZvN8aghtPm8PtNE4mfsiX4H8VFjiY/4iyFpDAnDMz2cYkjYFGi0cbSZFpthbIc2mfvNxtLm02bzeIsV0WZTQ+g3WD6IsTPTRMvX8HqKIWkMCcMzPZxiSNgUaOZXmA2mBlk+gZrAbR5PG8/zmR9EjaHNtnwPNcVy7tRM4uX18v4WQ9IYEoZnejjFkLApsPJDaNNo02kj+V5PP4I2muPxvZ7bPB9tOsez/AdjdxZbogZZvshqBEzziiFpDAnDMz2cYkjYFGh8r7ZYE22o5bwtNkWNsFphs8GW77AcuvkNPD/Hs1po83uKIWkMCcMzPZxiSNgUaKYJtJl8L6cG0YbSZlr+wvwI+imMDVGDTJNMUyzWxuuhn0O8pjnFkDSGhOGZHk4xJGwKNIvVUANoE6khVvvK81GjOD7Pb7G0UY1hLMy2bX2H1Spb7K8YksaQMDzTwymGhE2BNlqHxFgP/QZqCt/j+Z5usSnu/18NsRy91epyv+VXrLaZ4xVD0hgShmd6OMWQsCmw0hD6EbZ+gn4CbSK3rVbX1pETH3PYtNnUHPoJHG+0Ftf8JosVVl1WGCMIp0xW2AOqB5L2QEbXc9AvsH5b1ASLhTHWY7W+5gfY+a222Xq1jGomr680JIwRpSH1QMLvQBi8VV0WNcFy5qOxLOuXZb1X6MfQxlsOncfbGkPzw6wnJPFYLK7estIYEoZnejjFkLApsKrLsj67FpuhptDGmt9iGsDx6UdY7xZbE8njqTl2/aO1xdSwYkgaQ8LwTA+nGBI2BVZ1WbSh3KYNt3Xgtm57tGej5V9G16NYLTI11XLu5ufYepxiSBpDwvBMD6cYEjYF1A+xOirzC/hezt/bmjyro7L1IbT59COoSRbbstgdx7d8DTWvGJLGkDA808MphoRNgZWG2Pc4rK+vxZJoYy3fYmsAzS8xjbK+vlb3ZfmZ0bq0YkgaQ8LwTA+nGBI2BVb9siyeb73MrXc7ba71UCQe8yuoSdbfyvwkW6dvdWpWi1y938MYUXVZ9UDC70AYvNU3qGjTGLsxm04NsdiRnY/j0SZb7/XRvru2foR+DTXLerlYbXO9ZaUxJAzP9HCKIWFToNEvsN4ijFXZd//sW7Y8v8WeLHZltcO2Lt76bRGf9bK38ag5xZA0hoThmR5OMSRsCjRb82Y5a9psW69htbL2HULDQ42wb2hZvy6LRVnNgeXsK6cexoiKZdUDCb8DYfBW+RBbd239sCy/YTlq65lIDTG/wvrujn5jy3omcjw7P/fXW1YaQ8LwTA+nGBI2BRptNt+rqSm0kYzt2LatIbRe6WbDLZZl+RSrK7N+Ytb31+rQiiFpDAnDMz2cYkjYFFhpiPWXshw5j7dYjo1nOWxbp27f87Dvo9v5qSmWY7f8SDEkjSFheKaHUwwJmwK/AVHmUuwMPvEzAAAAAElFTkSuQmCC); background-color: rgb(255, 255, 255); background-position: 50% 50%; background-repeat: repeat repeat;
+
+}
+
+.clear {
+	clear: both; 
+}
+
+header {
+	padding: 50px 0 20px;
+	margin: 0 0 20px 0;
+}
+
+h1 span {
+	font-size: 0.5em;
+	color: lighten(@base, 50%);
+	position: relative;
+	left: 10px;
+	top: 10px;
+}
+
+.site-nav {
+	text-align: right;
+	padding: 23px 0 0;
+
+	a {
+		padding: 0 0 0 10px;
+		color: @primary;
+	}
+	.download {
+		background: @primary;
+		color: white;
+		padding: 4px 7px 4px;
+		margin-left: 10px;
+		border-radius: 2px;
+		.transition(all 0.2s);
+
+		&:hover {
+			background: darken(@primary, 10%);
+			text-decoration: none;
+		}
+	}
+}
+
+.demo {
+	margin: 0 0 0px;
+}
+
+.content article {
+	margin: 10px 0 10px;
+}
+
+.carousel-nav {
+	text-align: center;
+	padding: 20px 0 0;
+	a.pager {
+		border-radius: 50px;
+		background: lighten(@base, 80%);
+		.inline-block;
+		font-size: 0;
+		height: 10px;
+		width: 10px;
+		border: 1px solid lighten(@base, 75%);
+
+		&:hover {
+			border: 1px solid lighten(@base, 55%);
+		}
+		&.active {
+			background: @secondary;
+			border: 1px solid darken(@secondary, 5%);
+		}
+	}
+	a.next {
+		float: right;
+	}
+	a.prev {
+		float: left;
+	}
+	a.prev,
+	a.next {
+		color: lighten(@base, 60%);
+
+		&:hover {
+			color: lighten(@base, 30%);
+		}
+	}
+}
+
+.table-wrap {
+	width: 100%;
+	overflow: scroll;
+	margin: 20px 0 0
+}
+
+footer {
+	clear: both;
+	padding: 0 0 50px;
+	margin: 50px 0 0;
+	border-top: 1px solid lighten(@base, 70%);
+	p {
+		font-size: 0.875em;
+		color: lighten(@base, 40%);
+	}
+}
+
+// Gist Embed Tweaks
+
+td.line-numbers,
+.gist-meta {
+	display: none;
+}
+.gist .gist-file .gist-data {
+	border-bottom: 0 !important;
+}
+.gist .gist-file {
+	border: 0 !important;
+}
+
+code[id*="gist"] {
+	margin-bottom: 30px;
+}
+
+.gist td {
+	font-size: 0.875em;
+	line-height: 120%
+}
+
+
+

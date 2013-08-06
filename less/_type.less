@@ -1,0 +1,215 @@
+//
+// Typography
+// --------------------------------------------------
+
+
+// Customising this file
+// -------------------
+
+// @fontSize: set within the base responsive files.
+// @weighting: element-specific percentage increase of font-size, margin & line-height
+
+
+// Variables
+// -------------------
+
+@headingFont: 'Oswald', sans-serif;
+@paragraphFont: 'Helvetica', sans-serif;
+@baseColor: @base; // placeholder, remove & change if using own _variables.less file.
+
+// Headings
+// -------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: @lineHeight;
+	font-family: @headingFont;
+	font-weight: bold;
+	color: @baseColor;
+}
+
+h1 { 
+	@weighting: 2.5;
+	@size: @fontSize * @weighting;
+
+	font-size: @size;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+h2 { 
+	@weighting: 1.5;
+	@size: @fontSize * @weighting;
+
+	font-size: @size;
+	margin-top: @size / 2;
+	margin-bottom: @size / 4;
+	text-transform: uppercase;
+}
+h3 { 
+	@weighting: 1.25;
+	@size: @fontSize * @weighting;
+
+	font-size: @size;
+	margin-top: @size / 2;
+	margin-bottom: @size / 4;
+	color: lighten(@base, 20%);
+}
+h4 {
+	@weighting: 2;
+	@size: @fontSize * @weighting;
+
+	font-size: @size;
+	margin-top: @size / 2;
+	margin-bottom: @size / 4;
+}
+h5 {
+	@weighting: 1.5;
+	@size: @fontSize * @weighting;
+
+	font-size: @size;
+	margin-top: @size / 2;
+	margin-bottom: @size / 4;
+}
+h6 {
+	@weighting: 1;
+	@size: @fontSize * @weighting;
+
+	font-size: @size;
+	margin-top: @size / 2;
+	margin-bottom: @size / 4;
+}
+
+// Paragraph
+// -------------------
+
+body {
+	font-family: @paragraphFont;
+	font-size: @fontSize;
+	font-weight: 200;
+}
+p {
+	font-family: @paragraphFont;
+	font-size: @fontSize;
+	line-height: @lineHeight;
+	margin: @fontSize 0;
+	color: @baseColor;
+	font-weight: 200;
+
+	&.feature {
+		font-size: 1.25em;
+	}
+}
+a {
+	color: @primary;
+	text-decoration: none;
+
+	&:hover {
+		color: darken(@primary,10%);
+	}
+}
+
+// Basic Elements
+// -------------------
+
+abbr,
+acronym {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+address {
+	font-family: @paragraphFont;
+	font-size: @fontSize;
+	font-style: italic;
+}
+
+blockquote {
+	margin: @fontSize 0;
+	padding: 0 0 0 @fontSize * 2;
+}
+
+cite {
+	font-style: italic;
+}
+
+code {
+	//font-size: @fontSize;
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+	background: lighten(@base,80%);
+	color: lighten(@base, 20%);
+	font-size: 1em
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+strong,
+b {
+	font-weight: bold;
+}
+
+ol,
+ul {
+	margin: @fontSize 0;
+	padding: 0 0 0 @fontSize * 2;
+
+	li {
+		font-family: @paragraphFont;
+		font-size: @fontSize;
+		line-height: @lineHeight;
+		list-style-position: outside;
+		color: lighten(@baseColor, 0%);
+	}
+}
+ul li { list-style: disc; }
+ol li { list-style: decimal; }
+
+// Form
+// -------------------
+
+form {
+	margin: @fontSize 0;
+}
+
+// Descriptions
+// -------------------
+
+dl {
+	margin: @fontSize 0;
+
+	dt {
+		font-weight: bold;
+	}
+	dd {
+		margin: 0 0 @fontSize / 2;
+	}
+}
+
+// Tables
+// -------------------
+
+table {
+	font-family: @paragraphFont;
+	font-size: @fontSize;
+	width: 100%;
+	//margin: @fontSize 0;
+
+	th {
+		padding: @fontSize / 2;
+		border: 1px solid lighten(@baseColor, 75%);
+		background: lighten(@baseColor, 95%);
+		text-align: left;
+		font-weight: bold;
+	}
+	td {
+		padding: @fontSize / 2;
+		border: 1px solid lighten(@baseColor, 75%);
+	}
+}
+
