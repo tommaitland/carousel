@@ -15,7 +15,7 @@ Features:
 
 ## Usage
 
-*1.* Include the CSS/LESS and JS files.
+**1.** Include the CSS/LESS and JS files.
 
 ```html
 <style type="text/css" href="carousel.css" />
@@ -23,7 +23,7 @@ Features:
 <script src="carousel.js"></script>
 ```
 
-*2.* Setup the HTML. Carousel needs a wrapper around a set of 2 or more slides. These can be almost any HTML tag.
+**2.** Setup the HTML. Carousel needs a wrapper around a set of 2 or more slides. These can be almost any HTML tag.
 
 ```html
 <div id="my-demo-carousel">
@@ -49,7 +49,7 @@ Features:
 <a href="#3" data-carousel="jump">2</a>
 ```
 
-*3.* Initialise and configure.
+**3.** Initialise and configure.
 
 ```html
 <script>  
@@ -96,12 +96,16 @@ $('.carousel').carousel({
 
 ## Methods
 
-$(element).data('carousel').next()  - Go to the next slide
-$(element).data('carousel').prev()	- Go to the previous slide
-$(element).data('carousel').pause()	- Pause the carousel
-$(element).data('carousel').run()	- Start the carousel
-$(element).data('carousel').jump( integer )	- Go to the requested slide
+```$(element).data('carousel').next()```  - Go to the next slide
+```$(element).data('carousel').prev()```	- Go to the previous slide
+```$(element).data('carousel').pause()```	- Pause the carousel
+```$(element).data('carousel').run()```	- Start the carousel
+```$(element).data('carousel').jump( integer )```	- Go to the requested slide
 
 ## Contributing
 
 Pull requests are encouraged! Please keep commits as clean as possible, and document any changes you make.
+
+## License
+
+TBC
