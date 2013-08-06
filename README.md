@@ -96,11 +96,13 @@ $('.carousel').carousel({
 
 ## Methods
 
-```$(element).data('carousel').next()```  - Go to the next slide
-```$(element).data('carousel').prev()```	- Go to the previous slide
-```$(element).data('carousel').pause()```	- Pause the carousel
-```$(element).data('carousel').run()```	- Start the carousel
-```$(element).data('carousel').jump( integer )```	- Go to the requested slide
+Method | Description
+--- | --- | ---
+`$(element).data('carousel').next()` | Go to the next slide
+`$(element).data('carousel').prev()`  | Go to the previous slide
+`$(element).data('carousel').pause()`	| Pause the carousel
+`$(element).data('carousel').run()`	| Start the carousel
+`$(element).data('carousel').jump( integer )`	| Go to the requested slide
 
 ## Contributing
 
