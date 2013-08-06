@@ -1,7 +1,7 @@
 Carousel
-========
+***
 
-Carousel is a lightweight, responsive & easy-to-use jQuery carousel plugin. It's powered by CSS3 animations, packed with features you'll actually use while coming in at a tiny 5kb.
+Carousel is a lightweight, responsive & easy-to-use jQuery carousel plugin. It's powered by CSS3 animations, packed with features you'll actually use while coming in at a tiny 5kb. **Demo at [http://carousel.io/](http://carousel.io/)**
 
 Features:
 - Use your own markup
