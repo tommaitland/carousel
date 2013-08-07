@@ -113,4 +113,4 @@ Pull requests are encouraged! Please keep commits as clean as possible, and docu
 
 ## License
 
-TBC
+Apache License, Version 2.0. See the LICENSE file.
