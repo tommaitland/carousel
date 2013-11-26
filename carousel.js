@@ -76,6 +76,14 @@
             } else {
                 $element.removeClass('backwards');
             }
+            
+            // stop slide flying into position when only 3
+            if ($next.hasClass('left') && plugin.settings.transition === 'slide') {
+                $next.hide();
+                window.setTimeout(function(){
+                    $next.show();
+                }, s);
+            }
 
             $element.find('.slide').removeClass('left active right');
             $to.addClass('active');
