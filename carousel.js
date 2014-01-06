@@ -12,7 +12,7 @@
 
         var defaults = {
             slide: 'img',
-            speed: 5000,
+            speed: 6000,
 
             transition: 'fade',
             transitionSpeed: 2000,
